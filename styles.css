@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33); /* Original dark background */
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; /* Ensures elements are spaced apart */
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62); /* Original navbar color */
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nav ul li a:hover {
+    color: rgb(153, 153, 226); /* Original hover color */
+    font-size: 1.15rem;
+}
+
+.left {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 135px; /* Shifting towards right */
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstsection > div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.rightsection img {
+    width: 90%;
+}
+
+.purple {
+    color: rgb(170, 107, 228); /* Original purple color */
+}
+
+#element {
+    color: rgb(170, 107, 228);
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 200px;
+    text-align: left; /* Aligning the services section to the left */
+}
+
+.skillset {
+    font-size: 30px;
+    margin-top: 7px;
+    color: rgb(153, 153, 226); /* Original color */
+}
+
+.dash {
+    width: 160px;
+    height: 7px;
+    background-color: rgb(170, 107, 228); /* Original color */
+    margin-top: 10px; /* Adjusted to match the left alignment */
+}
+
+.boxlvl1,
+.boxlvl2, .boxlvl3 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    width: 80%;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 260px;
+    height: 270px;
+    padding: 20px;
+    background-color: #1a1a40;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px); /* Smooth hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.skill-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: rgb(170, 107, 228); /* Original purple color */
+}
+
+.skill-desc {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 800px; /* Increased form width */
+    margin: 50px auto;
+    background-color: transparent; /* No background box */
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 20px; /* Increased padding for larger input fields */
+    margin: 15px 0;
+    font-size: 1.2rem; /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1a1a40;
+    color: white;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgb(170, 107, 228);
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 15px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: rgb(153, 153, 226);
+}
+
+#contact {
+    text-align: left;
+    margin-left: 10%; /* Aligning similarly to the Skill-set section */
+}
+
+#contact .contact-form {
+    margin-left: 0; /* Centering the form */
+    width: 100%; /* Ensuring form takes up the proper width */
+    max-width: 700px; /* Control the form size */
+}
+/* Styling the Send Message Button */
+button[type="submit"] {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient Effect */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 180px;
+    margin-top: 15px; /* Keeps original alignment */
+    text-align: center; /* Ensures it stays left-aligned */
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+.resume-btn {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 20px; /* Ensures space from text */
+    display: inline-block;
+}
+
+.resume-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
